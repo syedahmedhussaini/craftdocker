@@ -1,0 +1,317 @@
+dateModified: 1556376936
+email:
+  fromEmail: syedahmedhussaini@gmail.com
+  fromName: 'Baltic Stallions'
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  166994e2-fe22-4acb-a18e-861ae2097717:
+    name: Common
+  8ddff3c6-2f63-4daf-b75f-3ec6e22b34b0:
+    name: Company
+  1953ed61-f631-4cb1-a2c8-2a0d0131d507:
+    name: 'Horse (Card)'
+  bea99cfd-bab9-4a30-b219-b7ac5fd94116:
+    name: 'Horse (Profile)'
+fields:
+  5c489e79-200d-423b-b4f6-42eca39e1114:
+    name: Twitter
+    handle: twitter
+    instructions: 'Twitter Handle'
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: '@twitter_handle'
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 8ddff3c6-2f63-4daf-b75f-3ec6e22b34b0
+  9f50dd08-752d-4f0f-9936-8ad713312434:
+    name: Instagram
+    handle: instagram
+    instructions: ''
+    searchable: false
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: '@instagram'
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 8ddff3c6-2f63-4daf-b75f-3ec6e22b34b0
+  e4db6b5e-429c-40b7-bb50-9c43f430e195:
+    name: 'Phone number'
+    handle: phoneNumber
+    instructions: 'Telephone number'
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\Number
+    settings:
+      defaultValue: null
+      min: '0'
+      max: null
+      decimals: 0
+      size: null
+      prefix: ''
+      suffix: ''
+    contentColumnType: integer(10)
+    fieldGroup: 8ddff3c6-2f63-4daf-b75f-3ec6e22b34b0
+  585d1989-1269-4797-a099-38e971bbb17c:
+    name: Address
+    handle: address
+    instructions: 'Street Address'
+    searchable: false
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: Address
+      code: ''
+      multiline: '1'
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 8ddff3c6-2f63-4daf-b75f-3ec6e22b34b0
+  a09135f0-cac6-4166-8e63-26008e07ed2e:
+    name: Height
+    handle: height
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\Number
+    settings:
+      defaultValue: null
+      min: '0'
+      max: null
+      decimals: '2'
+      size: null
+      prefix: ''
+      suffix: ''
+    contentColumnType: 'decimal(12,2)'
+    fieldGroup: 1953ed61-f631-4cb1-a2c8-2a0d0131d507
+  df4eb779-eedf-4cd3-870c-742e57f84874:
+    name: Studbook
+    handle: studbook
+    instructions: Studbook
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: Studbook
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 1953ed61-f631-4cb1-a2c8-2a0d0131d507
+  9bc2a332-6ecc-4d87-8d15-371fad7e0ab0:
+    name: Biography
+    handle: biography
+    instructions: ''
+    searchable: false
+    translationMethod: language
+    translationKeyFormat: null
+    type: craft\ckeditor\Field
+    settings:
+      purifierConfig: ''
+      purifyHtml: '1'
+      columnType: text
+    contentColumnType: text
+    fieldGroup: bea99cfd-bab9-4a30-b219-b7ac5fd94116
+  ef28fd87-0334-47a1-a1f8-86f6d79fef81:
+    name: Genealogy
+    handle: genealogy
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\Table
+    settings:
+      addRowLabel: 'Add a row'
+      maxRows: ''
+      minRows: ''
+      columns:
+        col1:
+          heading: ''
+          handle: ''
+          width: ''
+          type: singleline
+      defaults:
+        -
+          col1: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: bea99cfd-bab9-4a30-b219-b7ac5fd94116
+  26a06ba4-6c58-4f77-9bba-4448e9bc24fd:
+    name: 'Page Content'
+    handle: pageContent
+    instructions: ''
+    searchable: true
+    translationMethod: language
+    translationKeyFormat: null
+    type: craft\ckeditor\Field
+    settings:
+      purifierConfig: ''
+      purifyHtml: '1'
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 166994e2-fe22-4acb-a18e-861ae2097717
+globalSets:
+  27c7a90c-1b8d-4fc5-ad1a-64d58a5f5cd6:
+    name: Company
+    handle: company
+plugins:
+  tablemaker:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+sections:
+  ddacf094-0e31-4586-90e2-eed957661ef3:
+    name: Horse
+    handle: horse
+    type: channel
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      8a7bcf61-b753-4542-a8e2-38df4a046957:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: 'hengste/{slug}'
+        template: horse/_single
+      4b640805-6ce4-4cec-bedf-57f1b1683a2d:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: 'horse/{slug}'
+        template: horse/_single
+    entryTypes:
+      98492a72-06dc-4bd4-bf64-a7217601e6d9:
+        name: Horse
+        handle: horse
+        hasTitleField: true
+        titleLabel: 'Name of Horse'
+        titleFormat: ''
+        sortOrder: 1
+        fieldLayouts:
+          6311b104-260d-48ec-8e0c-53090cc9e147:
+            tabs:
+              -
+                name: 'Horse (Card)'
+                sortOrder: 1
+                fields:
+                  a09135f0-cac6-4166-8e63-26008e07ed2e:
+                    required: false
+                    sortOrder: 1
+                  df4eb779-eedf-4cd3-870c-742e57f84874:
+                    required: false
+                    sortOrder: 2
+              -
+                name: 'Horse (Profile)'
+                sortOrder: 2
+                fields:
+                  9bc2a332-6ecc-4d87-8d15-371fad7e0ab0:
+                    required: false
+                    sortOrder: 1
+                  ef28fd87-0334-47a1-a1f8-86f6d79fef81:
+                    required: false
+                    sortOrder: 2
+  7d9fb636-626a-4599-955e-f0c31a58402d:
+    name: Home
+    handle: home
+    type: single
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      8a7bcf61-b753-4542-a8e2-38df4a046957:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: __home__
+        template: index
+      4b640805-6ce4-4cec-bedf-57f1b1683a2d:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: __home__
+        template: index
+    entryTypes:
+      9847a20f-37e0-4cb1-b440-39398f6de379:
+        name: Home
+        handle: home
+        hasTitleField: false
+        titleLabel: null
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
+  79a90b97-31e3-4d06-86ef-205f6dce2f32:
+    name: Page
+    handle: page
+    type: channel
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      8a7bcf61-b753-4542-a8e2-38df4a046957:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: '{slug}'
+        template: pages/_default
+      4b640805-6ce4-4cec-bedf-57f1b1683a2d:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: '{slug}'
+        template: pages/_default
+    entryTypes:
+      4b14be90-341e-4a0f-9faf-954549e39efd:
+        name: Pages
+        handle: pages
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: null
+        sortOrder: 1
+siteGroups:
+  44a15a66-9cd3-4789-a102-a26a973e8877:
+    name: 'Baltic Stallions'
+sites:
+  8a7bcf61-b753-4542-a8e2-38df4a046957:
+    siteGroup: 44a15a66-9cd3-4789-a102-a26a973e8877
+    name: 'Baltic Stallions'
+    handle: default
+    language: de-DE
+    hasUrls: true
+    baseUrl: $DEFAULT_SITE_URL
+    sortOrder: 1
+    primary: true
+  4b640805-6ce4-4cec-bedf-57f1b1683a2d:
+    siteGroup: 44a15a66-9cd3-4789-a102-a26a973e8877
+    name: 'Baltic Stallions English'
+    handle: balticStallionsEnglish
+    language: en-GB
+    hasUrls: true
+    baseUrl: '@web/en/'
+    sortOrder: 2
+    primary: true
+system:
+  edition: solo
+  name: 'Baltic Stallions'
+  live: true
+  schemaVersion: 3.1.27
+  timeZone: America/Los_Angeles
+users:
+  requireEmailVerification: true
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoVolumeUid: null
+  photoSubpath: ''
